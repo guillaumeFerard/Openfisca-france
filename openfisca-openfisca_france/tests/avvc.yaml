@@ -1,0 +1,25 @@
+- name: smic
+  period: 2023-01
+  input:
+    code_organisme:
+      2023-01: 971
+  output:
+    montant_smic_35h:
+      2023-01: 1250
+
+
+
+- name: Income tax for a single parent and a child
+  description: Income tax should get properly computed across all members of a household
+  period: 2023-01
+  absolute_error_margin: 0
+  input:
+    persons:
+      Alicia:
+        salaire:
+          2023-01: 2400
+  output:
+    persons:
+      Alicia:
+        total_ressources_personne:
+          2023-01: 2400
